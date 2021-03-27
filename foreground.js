@@ -1,0 +1,1 @@
+console.log('Foreground File Successfully Loaded!')

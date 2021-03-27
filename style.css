@@ -1,0 +1,42 @@
+/*blur out video thumbnail */
+#thumbnail.ytd-thumbnail {
+  filter: blur(10px);
+}
+
+/*blur out channel avatar */
+#avatar-link[tabindex='-1'] {
+  filter: blur(2px);
+}
+
+/*blur out video title */
+#video-title {
+  filter: blur(2px);
+}
+
+/*blur out channel name */
+#metadata.ytd-video-meta-block {
+  filter: blur(2px);
+}
+
+/*remove misc hover effects */
+#hover-overlays, 
+#mouseover-overlay {
+  display: none;
+}
+
+/*blur out users' comments and avatars */
+#author-thumbnail {
+  filter: blur(3px);
+}
+
+#content-text {
+  filter: blur(3px);
+}
+
+span.style-scope.ytd-comment-renderer {
+  filter: blur(3px);
+}
+
+span.ytd-badge-supported-renderer {
+  filter: blur(3px);
+}

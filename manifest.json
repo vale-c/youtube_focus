@@ -1,0 +1,33 @@
+{
+  "name": "YouTube Focus",
+  "description": "Blur out YouTube Thumbnails to avoid getting distracted while you search for",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": [ "*://*/*" ],
+    "include_globs": [
+        "*://*.youtube.com/*"
+    ],
+    "css": ["style.css"],
+    "js": ["foreground.js"]
+}],
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/yt_focus_16.png",
+      "32": "/images/yt_focus_32.png",
+      "48": "/images/yt_focus_48.png",
+      "128": "/images/yt_focus_128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/yt_focus_16.png",
+    "32": "/images/yt_focus_32.png",
+    "48": "/images/yt_focus_48.png",
+    "128": "/images/yt_focus_128.png"
+  }
+}

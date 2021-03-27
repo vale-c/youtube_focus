@@ -1,2 +1,1 @@
-# youtube_focus_chrome_extension
-# youtube_focus_chrome_extension
+A Chrome Extension to blur out YouTube Video Thumbnails (& comments) to enhance focus and minimize distractions.
